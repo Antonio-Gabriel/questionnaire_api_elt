@@ -1,0 +1,322 @@
+[
+  {
+    "id": 964,
+    "question": "What is a kube-proxy used for?",
+    "description": null,
+    "answers": {
+      "answer_a": "To supplant an authentic webpage in a search engine's index and search page results",
+      "answer_b": "To load-balance traffic that is destined for services to the correct backend pods",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 606,
+    "question": "How is a constant defined in a PHP script?",
+    "description": null,
+    "answers": {
+      "answer_a": "define (\"ACONSTANT\" 123)",
+      "answer_b": "define (\"ACONSTANT\", 123);",
+      "answer_c": "define (CONSTANT, 123);",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 29,
+    "question": "On which file is stored the configuration of which DNS server the machine will use?",
+    "description": null,
+    "answers": {
+      "answer_a": "/etc/resolv.conf",
+      "answer_b": "/etc/dns.conf",
+      "answer_c": "/var/dns",
+      "answer_d": "By running the command show dns",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 750,
+    "question": "What is Minikube",
+    "description": null,
+    "answers": {
+      "answer_a": "Specification of a Kubernetes API object in JSON or YAML format",
+      "answer_b": "A pod object that a kubelet uses to represent a static pod",
+      "answer_c": "A tool for running Kubernetes locally",
+      "answer_d": "An abstraction used by Kubernetes to support multiple virtual clusters on the same physical cluster",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 730,
+    "question": "How to list PersistentVolumes sorted by capacity in Kubernetes?",
+    "description": null,
+    "answers": {
+      "answer_a": "kubectl get pv --sort-by=.spec.capacity.volume",
+      "answer_b": "kubectl get pv --sort-by=.spec.capacity.storage",
+      "answer_c": "kubectl get pv --sort-by=.spec.capacity.memory",
+      "answer_d": "kubectl get pv --sort-by=.spec.capacity.space",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 425,
+    "question": "TCL is used for _______?",
+    "description": null,
+    "answers": {
+      "answer_a": "Control access to data stored in a database",
+      "answer_b": "Managing the changes made by DML statements",
+      "answer_c": "Defining database schema",
+      "answer_d": "null of the mentioned",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 920,
+    "question": "What are the different components of Kubernetes Architecture?",
+    "description": null,
+    "answers": {
+      "answer_a": "The Kubernetes Architecture has mainly 2 components \u2013 the master node and the worker node.",
+      "answer_b": "The Kubernetes Architecture has mainly 2 components \u2013 the service and the worker path.",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 565,
+    "question": "Which of the following variables is not a predefined variable?",
+    "description": null,
+    "answers": {
+      "answer_a": "$get",
+      "answer_b": ".$post",
+      "answer_c": "$request",
+      "answer_d": "$ask",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1006,
+    "question": "Which one is true for Minikube?",
+    "description": null,
+    "answers": {
+      "answer_a": "Minikube is an all-in-One Kubernetes cluster on our workstation",
+      "answer_b": "Minikube multi-node cluster",
+      "answer_c": "Minikube is a GUI for Kubernetes",
+      "answer_d": "null of the above",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 161,
+    "question": "In HTML, what does the <aside> element define?",
+    "description": null,
+    "answers": {
+      "answer_a": "The ASCII character-set; to send information between computers on the Internet",
+      "answer_b": "A navigation list to be shown at the left side of the page",
+      "answer_c": "A list to be included in a certain part of the page",
+      "answer_d": "Content aside from the page content",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_d",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "HTML"
+      }
+    ],
+    "category": "",
+    "difficulty": "Medium"
+  }
+]
