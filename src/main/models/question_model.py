@@ -8,8 +8,6 @@ class QuestionModel(BaseModel):
     title: str
     created_at: datetime
 
-    # class Config:
-    #     orm_mode = True
 
 class QuestionMapper(MappingModel):
     """mapping question models to json"""
