@@ -10,7 +10,6 @@ class TransformRawData:
     def __init__(self) -> None:
         self.answers = []
         self.questions = []
-        self.categories = []
 
     def transform(self, extract_contract: ExtractContract) -> TransformContract:
         """Transform questionnaire extracted data"""      
@@ -19,25 +18,17 @@ class TransformRawData:
         try:
             raw_data = extract_contract.raw_information_content
 
-            for data in raw_data:
-                category = data.get('category')
+            for data in raw_data:               
                 question = data.get('question')
                 answers_data = data.get('answers')
-
-                if category:
-                    category_id = str(uuid4())
-                    self.categories.append({"id": category_id, "category": category})
-
+             
                 if question:
                     question_id = str(uuid4())
                     question_item = {
                         "id": question_id,
                         "title": question                        
                     }
-
-                    if category:
-                        question_item["category_id"] = category_id
-                    
+                                       
                     self.questions.append(question_item)
 
                     # Validate answers and correctors
@@ -48,8 +39,7 @@ class TransformRawData:
                             self.answers.append(answer_item)
                         
             return TransformContract(
-                questions=self.questions,
-                categories=self.categories,
+                questions=self.questions,            
                 answers=self.answers
             )
         except Exception as exception:
@@ -74,4 +64,3 @@ class TransformRawData:
         """Reset the instance lists"""
         self.answers = []
         self.questions = []
-        self.categories = []
