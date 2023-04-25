@@ -29,15 +29,15 @@ class TransformRawData:
                         "title": question                        
                     }
                                        
-                    self.questions.append(question_item)
+                    self.questions.append(question_item)                            
 
                     # Validate answers and correctors
                     for answer_key, answer_value in answers_data.items():
-                        if answer_value is not None:
+                        if answer_value is not None:                                                    
                             is_correct = self.__validate_corrector(data['correct_answers'][f"{answer_key}_correct"])
                             answer_item = self.__answers_payload(question_id, answer_value, is_correct)
-                            self.answers.append(answer_item)
-                        
+                            self.answers.append(answer_item)                            
+                                                                    
             return TransformContract(
                 questions=self.questions,            
                 answers=self.answers
