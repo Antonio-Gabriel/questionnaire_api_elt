@@ -1,5 +1,6 @@
 from typing import List
 from fastapi import FastAPI, status
+from fastapi.middleware.cors import CORSMiddleware
 
 from .mappers.answer_mapper import answer_mapper, AnswerModel
 from .mappers.question_mapper import question_mapper, QuestionModel
@@ -13,8 +14,19 @@ from ..services.implementation.answers_implementation import (
 
 app = FastAPI()
 
+app.title = "Questionnaire API"
+app.description = "An application provide questionnaires"
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.get("/questions", 
-         status_code=status.HTTP_200_OK)
+         status_code=status.HTTP_200_OK, tags=["Start"])
 def get_questions() -> List[QuestionModel]:
     """get all questions from database"""
 
@@ -25,8 +37,7 @@ def get_questions() -> List[QuestionModel]:
 
 
 @app.get("/answers",
-         status_code=status.HTTP_200_OK
-         )
+         status_code=status.HTTP_200_OK, tags=["Start"])
 def get_answers() -> List[AnswerModel]:
     """get all answers from database"""
 
