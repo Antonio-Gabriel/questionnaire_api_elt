@@ -25,8 +25,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/questions", 
-         status_code=status.HTTP_200_OK, tags=["Start"])
+@app.get("/", 
+         status_code=status.HTTP_200_OK, tags=["🔥 Starting"])
+def main() -> str:
+    """get started"""
+
+    return "Getting started"
+
+
+@app.get("/v1/questions", 
+         status_code=status.HTTP_200_OK, tags=["Services"])
 def get_questions() -> List[QuestionModel]:
     """get all questions from database"""
 
@@ -36,8 +44,8 @@ def get_questions() -> List[QuestionModel]:
     return questions
 
 
-@app.get("/answers",
-         status_code=status.HTTP_200_OK, tags=["Start"])
+@app.get("/v1/answers",
+         status_code=status.HTTP_200_OK, tags=["Services"])
 def get_answers() -> List[AnswerModel]:
     """get all answers from database"""
 
