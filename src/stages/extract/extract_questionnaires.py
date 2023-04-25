@@ -1,5 +1,3 @@
-from datetime import date
-
 from ...drivers.interfaces.http_requester_interface import (
     HttpRequesterInterface
 )
