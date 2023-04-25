@@ -1,3 +1,5 @@
+import os
+
 from typing import Callable, Iterable
 from contextlib import AbstractAsyncContextManager
 
@@ -21,7 +23,7 @@ class HttpRequester(HttpRequesterInterface):
     async def get_questionnaires(self) -> Iterable[list]:
         """get external questionnaires"""
 
-        async with self.__questionnaire_gateway(5).get_async() as gateway:            
+        async with self.__questionnaire_gateway(int(os.environ["TIMEOUT"])).get_async() as gateway:            
             _, questionnaires = gateway
 
         return questionnaires
