@@ -14,3 +14,17 @@ class QuestionsImplementation(QuestionsInterface):
         conn.execute(query, list(questions.values()))
         conn.commit()
         conn.close()
+
+    def get_questions(self):
+        """get all questions from db"""
+
+        query = ''' SELECT * FROM questions '''
+
+        conn = DatabaseConnector.get_connection()
+        cursor = conn.cursor()
+        cursor.execute(query)
+        questions = cursor.fetchall()
+        cursor.close()
+        conn.close()
+
+        return questions
