@@ -14,3 +14,17 @@ class AnswersImplementation(AnswersInterface):
         conn.execute(query, list(answers.values()))
         conn.commit()
         conn.close()
+
+    def get_answers(self):
+        """get all answers from db"""
+
+        query = ''' SELECT * FROM answers '''
+
+        conn = DatabaseConnector.get_connection()
+        cursor = conn.cursor()
+        cursor.execute(query)
+        answers = cursor.fetchall()
+        cursor.close()
+        conn.close()
+
+        return answers
