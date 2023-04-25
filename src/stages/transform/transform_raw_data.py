@@ -36,7 +36,9 @@ class TransformRawData:
                         if answer_value is not None:                                                    
                             is_correct = self.__validate_corrector(data['correct_answers'][f"{answer_key}_correct"])
                             answer_item = self.__answers_payload(question_id, answer_value, is_correct)
-                            self.answers.append(answer_item)                            
+                            
+                            if not self.__check_limit_of_answers(question_id):                        
+                                self.answers.append(answer_item)                            
                                                                     
             return TransformContract(
                 questions=self.questions,            
@@ -60,6 +62,17 @@ class TransformRawData:
             "is_correct": is_correct
         }
 
+    def __check_limit_of_answers(self, key: str):
+        """check the limits of answers per question"""
+
+        answers = [q for q in self.answers if q['question_id'] == key]
+        answers_count = len(answers)
+
+        if answers_count != 4:
+            return False
+
+        return True
+        
     def __reset_lists(self) -> None:
         """Reset the instance lists"""
         self.answers = []
