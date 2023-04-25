@@ -1,4 +1,4 @@
-import uvicorn, typer
+import uvicorn, typer, asyncio
 from src.main import main_pipeline
 from src.main.server import app
 
@@ -13,7 +13,7 @@ def http_server():
 @typer_cli.command("pipeline")
 def run_pipeline():
     """start pipeline process"""
-    main_pipeline.run_pipeline()
+    asyncio.run(main_pipeline.run_pipeline())
 
 
 if __name__ == "__main__":
