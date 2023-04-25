@@ -1,7 +1,7 @@
 from ..models.question_model import QuestionModel, QuestionMapper
 
 def question_mapper(questions: list):
-    """articles responses"""
+    """question mapper responses"""
     questions_mapped = []
 
     for question in questions:
